@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Effects Container -->
+    <div id="bg-effects"></div>
+    
+    <!-- Cursor Trail Container -->
+    <div id="cursor-trail"></div>
+
+    <!-- Music Player & Toggle -->
+    <audio id="bg-music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="glass-btn hidden">🎵 Play Music</button>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="screen active">
+        <div class="heartbeat-loader">❤️</div>
+    </div>
+
+    <!-- Main App Container -->
+    <main id="app">
+        
+        <!-- Screen 1: Landing Page -->
+        <section id="screen-landing" class="screen hidden">
+            <h1 class="handwriting fade-in">💌 A Letter Just For You</h1>
+            <div class="envelope-container float-anim" id="envelope-btn">
+                <div class="envelope">💌</div>
+            </div>
+            <p class="fade-in pulse-text">Tap the letter ❤️</p>
+        </section>
+
+        <!-- Screen 2: Love Letter -->
+        <section id="screen-letter" class="screen hidden">
+            <div class="glass-card letter-card">
+                <div id="typing-text" class="body-text"></div>
+                <h2 class="handwriting accent-text fade-in hidden" id="letter-ending">I have one question for you...</h2>
+                <button id="continue-btn" class="primary-btn fade-in hidden">❤️ Continue</button>
+            </div>
+        </section>
+
+        <!-- Screen 3: Proposal -->
+        <section id="screen-proposal" class="screen hidden">
+            <div class="glass-card proposal-card">
+                <h1 class="handwriting">If I propose to you...</h1>
+                <h2 class="handwriting accent-text">What would your answer be?</h2>
+                <div class="buttons-container">
+                    <button id="yes-btn" class="primary-btn pulse-btn">💖 YES</button>
+                    <button id="no-btn" class="secondary-btn">🤍 NO</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 4: Celebration -->
+        <section id="screen-celebration" class="screen hidden">
+           <div class="glass-card celebration-card">
+           <div class="handwriting heartbeat-loader huge-text">❤️</div>
+           <p class="body-text">You just make my life</p>
+           <h2 class="handwriting accent-text">You're my favorite chapter of life.</h2>
+           <div class="our-story fade-in">
+                 <p class="body-text">Thank you for making my heart feel at home.</p>
+               <div class="ribbon-banner">Our Story Begins 🌸</div>
+            </div>
+        </div>
+</section>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
